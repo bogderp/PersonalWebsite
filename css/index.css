@@ -1,0 +1,78 @@
+body {
+	margin: 0px 0px 0px 0px;
+	background-color: black;
+}
+
+.brand {
+	position: absolute;
+	top: 13px;
+	left: 30px;
+	color: #18453B;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 130%;
+}
+
+.brand:hover {
+	cursor: pointer;
+	color: black;
+	opacity: .40;
+}
+
+#icons {
+	position: absolute;
+	top: 10px;
+	left: 210px;
+	text-align: center;
+	height: 30px;
+}
+
+.github:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+
+}
+
+.navbar {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: right;
+	background-color: white;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	opacity: .70;
+	height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navbar li {
+	font-size: 110%;
+	display: inline;
+	color: #18453B;
+	padding: 0px 10px 0px 10px;
+}
+
+.navbar li:hover {
+	color: black;
+	opacity: .40;
+
+}
+
+div.mainView {
+	background-image: url("../img/backdrop.jpeg");
+	background-size: cover; 
+	width: 100%;
+}
