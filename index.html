@@ -3,7 +3,7 @@
 	<head>
     	<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     	<meta name="description" content="">
     	<meta name="author" content="Bogdan Pozderca">
     	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -18,13 +18,24 @@
 			<div class="container">
 				<div>
 					<div class="brand">Bogdan Pozderca</div>
-					<div id="icons"><a href="https://github.com/bogdanpozderca"><img class="github" width="30px" height="30px" src="img/github.png"></a></div>
+					<div id="icons">
+						<a href="https://github.com/bogdanpozderca"><img class="github" width="25px" height="25px" src="img/github.png"></a>
+						<a href="https://www.linkedin.com/in/bogdanpozderca"><img class="linkedin" width="25px" height="25px" src="img/linkedin.png"></a>
+					</div>
 				</div>
 				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="FAQ.html">Projects</a></li>
-					<li><a href="#requests">Resume</a></li>
+					<li class="menu"><a href="#about">About</a></li>
+					<li class="menu"><a href="#contact">Contact</a></li>
+					<li class="menu"><a href="#projects">Projects</a></li>
+					<li class="menu"><a href="#requests">Resume</a></li>
+					<li class="mobileMenu"><a href="#mobile"><img class="linkedin" width="30px" height="30px" src="img/mobileMenu.png"></a>
+						<ul style="padding-bottom: 15px">
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li style='border-bottom-left-radius: 5px; border-bottom-right-radius: 5px'><a href="#requests">Resume</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 	    </nav>

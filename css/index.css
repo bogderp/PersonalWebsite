@@ -1,3 +1,84 @@
+@media (max-width: 700px) {
+	.navbar ul li.menu {
+		display: none
+	}
+
+	.brand {
+		top: 11px;
+		font-size: 150%;
+	}
+
+	#icons {
+		left: 210px;
+	}
+
+	.navbar ul li.mobileMenu {
+		position: absolute;
+		top: 9px;
+		right: 0px;
+		padding-right: 10px;
+		display: block;
+	}
+
+	.mobileMenu ul {
+		position: absolute;
+		top: 42px;
+		right: 0;
+		text-align: left;
+	}
+	.mobileMenu li {
+		display: none;
+		background-color: white;
+		font-size: 130%;
+		padding: 5px 0px 5px 10px;
+		opacity: .70;
+	
+		
+	}
+
+	.mobileMenu li:hover {
+		color: black;
+		opacity: .40;
+	}
+
+
+
+}
+
+@media (min-width: 701px) {
+	.navbar li {
+		font-size: 110%;
+		display: inline;
+		color: #18453B;
+		padding: 0px 10px 0px 10px;
+	}
+
+	.brand {
+		font-size: 130%;
+		top: 13px;
+	}
+
+	#icons {
+		left: 190px;
+	}
+
+
+	.navbar li:hover {
+		color: black;
+		opacity: .40;
+
+	}
+
+	.navbar ul li.mobileMenu {
+		display: none;
+		font-size: 110%;
+		color: #18453B;
+	}
+}
+
+
+
+
 body {
 	margin: 0px 0px 0px 0px;
 	background-color: black;
@@ -5,11 +86,9 @@ body {
 
 .brand {
 	position: absolute;
-	top: 13px;
-	left: 30px;
+	left: 10px;
 	color: #18453B;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 130%;
 }
 
 .brand:hover {
@@ -20,13 +99,16 @@ body {
 
 #icons {
 	position: absolute;
-	top: 10px;
-	left: 210px;
-	text-align: center;
-	height: 30px;
+	top: 13px;
+	display: inline;
 }
 
 .github:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+.linkedin:hover {
 	opacity: .5;
 	cursor: pointer;
 }
@@ -44,6 +126,10 @@ a:visited {
 
 }
 
+li {
+	list-style-type: none;
+}
+
 .navbar {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	text-align: right;
@@ -56,19 +142,6 @@ a:visited {
     top: 0;
     right: 0;
     left: 0;
-}
-
-.navbar li {
-	font-size: 110%;
-	display: inline;
-	color: #18453B;
-	padding: 0px 10px 0px 10px;
-}
-
-.navbar li:hover {
-	color: black;
-	opacity: .40;
-
 }
 
 div.mainView {
