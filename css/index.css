@@ -3,8 +3,15 @@
 		display: none
 	}
 
+	main.myContent {
+		background-image: url("../img/backdrop_mobile.jpeg");
+		background-size: contain;
+		background-attachment: fixed;
+	}
+
 	.brand {
 		top: 11px;
+		left: 10px;
 		font-size: 150%;
 	}
 
@@ -32,8 +39,10 @@
 		font-size: 130%;
 		padding: 5px 0px 5px 10px;
 		opacity: .70;
-	
-		
+	}
+
+	.mobileMenu li  a {
+		display: block;
 	}
 
 	.mobileMenu li:hover {
@@ -41,9 +50,222 @@
 		opacity: .40;
 	}
 
+	h2 {
+		font-size: 2em;
+	}
 
+	.HelloTwitter {
+		width: 25px;
+		height: 25px;
+		left: 48%;
+		right: 0;
+		top: 135%;
+	}
+
+	#silly {
+		text-align: center;
+		font-size: 1em;
+		width: 75%;
+		top: 70%; 
+		left: 14%;	
+	}
 
 }
+
+@media (min-width: 701px ) and (max-width: 1100px) {
+	.brand {
+		left: 10px;
+	}
+
+	#icons {
+		left: 190px;
+	}
+
+
+	h2 {
+		font-size: 3em;
+	}
+
+	.HelloTwitter {
+		width: 50px;
+		height: 50px;
+		left: 48%;
+		right: 0;
+		top: 160%;
+	}
+
+	#silly {
+		text-align: center;
+		font-size: 2em;
+		width: 75%;
+		top: 50%; 
+		left: 14%;	
+	}
+}
+
+
+
+@media (min-width: 1101px ) and (max-width: 1550px) {
+	.brand {
+		left: 10px;
+	}
+
+	#icons {
+		left: 190px;
+	}
+
+
+	h2 {
+		font-size: 4em;
+	}
+
+	.HelloTwitter {
+		width: 65px;
+		height: 65px;
+		bottom: -29%;
+		left: 18%;
+	}
+
+	#silly {
+		font-size: 2.5em;
+		text-align: left;
+		width: 60%;
+		top: 50%; 
+		left: 24%;	
+	}
+}
+
+
+@media (min-width: 1551px ) and (max-width: 1900px) {
+	.brand {
+		left: 10px;
+	}
+
+	#icons {
+		left: 190px;
+	}
+
+	h2 {
+		font-size: 4.5em;
+	}
+
+	.HelloTwitter {
+		width: 75px;
+		height: 75px;
+		bottom: -29%;
+		left: 23%;
+	}
+
+	#silly {
+		font-size: 3em;
+		text-align: left;
+		width: 50%;
+		top: 50%; 
+		left: 28%;	
+	}
+}
+
+@media (min-width: 1901px ) and (max-width: 2300px) {
+	.last {
+		margin-right: 22%;
+	}	
+
+	.brand {
+		left: 22%;
+	}
+
+	#icons {
+		left: 31%;
+	}
+
+	
+	h2 {
+		font-size: 5em;
+	}
+
+	.HelloTwitter {
+		width: 75px;
+		height: 75px;
+		bottom: -29%;
+		left: 27%;
+	}
+
+	#silly {
+		font-size: 3em;
+		text-align: left;
+		width: 42%;
+		top: 50%; 
+		left: 31%;	
+	}
+}
+
+@media (min-width: 2301px ) and (max-width: 2800px) {
+	.last {
+		margin-right: 23%;
+	}
+
+	.brand {
+		left: 23%;
+	}
+
+	#icons {
+		left: 31%;
+	}
+
+	h2 {
+		font-size: 6em;
+	}
+
+	.HelloTwitter {
+		width: 75px;
+		height: 75px;
+		bottom: -29%;
+		left: 27%;
+	}
+
+	#silly {
+		font-size: 4em;
+		text-align: left;
+		width: 45%;
+		top: 50%; 
+		left: 31%;	
+	}
+}
+
+@media (min-width: 2801px) {
+	.last {
+		margin-right: 26%;
+	}
+
+	.brand {
+		left: 26%;
+	}
+
+	#icons {
+		left: 32%;
+	}
+
+
+	h2 {
+		font-size: 8em;
+	}
+
+	.HelloTwitter {
+		width: 100px;
+		height: 100px;
+		bottom: -27%;
+		left: 23%;
+	}
+
+	#silly {
+		font-size: 5em;
+		text-align: left;
+		width: 50%;
+		top: 50%; 
+		left: 27%;	
+	}
+}
+
 
 @media (min-width: 701px) {
 	.navbar li {
@@ -58,15 +280,15 @@
 		top: 13px;
 	}
 
-	#icons {
-		left: 190px;
-	}
-
-
 	.navbar li:hover {
 		color: black;
 		opacity: .40;
 
+	}
+
+	main.myContent {
+		background-image: url("../img/backdrop.jpeg");
+		background-size: cover;
 	}
 
 	.navbar ul li.mobileMenu {
@@ -81,12 +303,10 @@
 
 body {
 	margin: 0px 0px 0px 0px;
-	background-color: black;
 }
 
 .brand {
 	position: absolute;
-	left: 10px;
 	color: #18453B;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -109,6 +329,11 @@ body {
 }
 
 .linkedin:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+.twitter:hover {
 	opacity: .5;
 	cursor: pointer;
 }
@@ -144,8 +369,49 @@ li {
     left: 0;
 }
 
-div.mainView {
-	background-image: url("../img/backdrop.jpeg");
-	background-size: cover; 
-	width: 100%;
+main.myContent {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
 }
+
+#HiHeader {
+	width: 100%; 
+	position: absolute; 
+	top: 30%;
+}
+
+h2 {
+	position: relative;
+	font-family:Rokkitt, helvetica, arial, sans-serif;
+	color: white;
+}
+
+
+#silly {
+	color: white;
+	position: absolute;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.HelloTwitter {
+	position: absolute;
+}
+
+.seeMore {
+	color: white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.section{
+	height: 20vh;
+	background-color: white;
+
+}
+
+
+
+
