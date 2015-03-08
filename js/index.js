@@ -51,4 +51,12 @@ $(document).ready(function(){
     	}
     	
     })
+
+    $(".seeMore").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#A").offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 3  },
+            1500);
+        $(".seeMore").fadeOut(1500); 
+    });
+
 });
