@@ -59,4 +59,12 @@ $(document).ready(function(){
         $(".seeMore").fadeOut(1500); 
     });
 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() == 0) {
+            $(".seeMore").fadeIn(); 
+        }
+        else {
+            $(".seeMore").fadeOut(); 
+        }
+    });
 });
