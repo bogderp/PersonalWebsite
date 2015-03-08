@@ -425,6 +425,11 @@ h2 {
 	background-color: white;
 }
 
+.sectionImg{
+	height: 50vh;
+	background-color: white;
+}
+
 button {
 	margin-top: 30vh;
 	background-color: #AE8917;
