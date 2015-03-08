@@ -1,6 +1,4 @@
-function dynamics() {
-    var height = $(window).height();
-    var width = $(window).width();
+function dynamics(height, width) {
     height = parseInt(height) + 'px';
     width = parseInt(width) + 'px';
     $(".mainView").css('height',height);
@@ -8,10 +6,39 @@ function dynamics() {
 }
 
 $(document).ready(function(){
+    var height = $(window).height();
+    var width = $(window).width();
+
+    if ((width/[(24/100)*height]) < (5347/1708)) {
+        $('.projects').attr('src', 'img/works2.png');
+    }
+    else {
+        $('.projects').attr('src', 'img/works.png');
+    }
+
+    if (width < 350) {
+        $('.brand').html('B. Pozderca');
+        $('#icons').css('left', '150px');
+    }
+
     $(window).on('beforeunload', function() {
         $(window).scrollTop(0);
     });
-    dynamics();
+    dynamics(height,width);
+
+    $(window).resize(function() {
+        if (($(window).width()/[(24/100)*$(window).height()]) < (5347/1708)) {
+            $('.projects').attr('src', 'img/works2.png');
+        }
+        else {
+            $('.projects').attr('src', 'img/works.png');
+        }
+
+        if ($(window).width() < 350) {
+            $('.brand').html('B. Pozderca');
+            $('#icons').css('left', '150px');
+        }
+    });
 
     isVisible = 0;
     $('.mobileMenu').click(function(){
