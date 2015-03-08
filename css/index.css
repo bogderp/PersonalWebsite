@@ -3,12 +3,6 @@
 		display: none
 	}
 
-	main.myContent {
-		background-image: url("../img/backdrop_mobile.jpeg");
-		background-size: contain;
-		background-attachment: fixed;
-	}
-
 	.brand {
 		top: 11px;
 		left: 10px;
@@ -295,11 +289,6 @@
 
 	}
 
-	main.myContent {
-		background-image: url("../img/backdrop.jpeg");
-		background-size: cover;
-	}
-
 	.navbar ul li.mobileMenu {
 		display: none;
 		font-size: 110%;
@@ -319,6 +308,11 @@
 
 body {
 	margin: 0px 0px 0px 0px;
+}
+
+main.myContent {
+	background-image: url("../img/backdrop.jpeg");
+	background-size: cover;
 }
 
 .brand {
