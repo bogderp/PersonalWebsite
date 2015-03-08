@@ -501,7 +501,7 @@ button:hover, button:focus {
 }
 
 #B {
-	background-image: url('../img/backdrop_old.jpeg'); 
+	background-image: url('../img/transition_1.jpeg'); 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -509,7 +509,7 @@ button:hover, button:focus {
 
 
 #E {
-	background-image: url('../img/sample.jpeg'); 
+	background-image: url('../img/transition_2.jpeg'); 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
