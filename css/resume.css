@@ -1,3 +1,243 @@
+@media (max-width: 700px) {
+	.navbar ul li.menu {
+		display: none
+	}
+
+	.brand {
+		top: 11px;
+		left: 10px;
+		font-size: 150%;
+	}
+
+	#icons {
+		left: 210px;
+	}
+
+	.navbar ul li.mobileMenu {
+		position: absolute;
+		top: 9px;
+		right: 0px;
+		padding-right: 10px;
+		display: block;
+	}
+
+	.mobileMenu ul {
+		position: absolute;
+		top: 42px;
+		right: 0;
+		text-align: left;
+	}
+	.mobileMenu li {
+		display: none;
+		background-color: white;
+		font-size: 130%;
+		padding: 5px 0px 5px 10px;
+		opacity: .70;
+	}
+
+	.mobileMenu li  a {
+		display: block;
+	}
+
+	.mobileMenu li:hover {
+		color: black;
+		opacity: .40;
+	}
+
+}
+
+@media (min-width: 701px ) and (max-width: 900px) {
+
+}
+
+@media (min-width: 701px ) and (max-width: 1100px) {
+	.brand {
+		left: 10px;
+	}
+
+	#icons {
+		left: 190px;
+	}
+
+}
+
+@media (min-width: 901px ) and (max-width: 1300px) {
+
+}
+
+
+
+@media (min-width: 1101px ) and (max-width: 1550px) {
+	.brand {
+		left: 10px;
+	}
+
+	#icons {
+		left: 190px;
+	}
+
+}
+
+
+@media (min-width: 1551px ) and (max-width: 1900px) {
+	.brand {
+		left: 10px;
+	}
+
+	#icons {
+		left: 190px;
+	}
+
+}
+
+@media (min-width: 1901px ) and (max-width: 2300px) {
+	.last {
+		margin-right: 22%;
+	}	
+
+	.brand {
+		left: 22%;
+	}
+
+	#icons {
+		left: 31%;
+	}
+
+}
+
+@media (min-width: 2301px ) and (max-width: 2800px) {
+	.last {
+		margin-right: 23%;
+	}
+
+	.brand {
+		left: 23%;
+	}
+
+	#icons {
+		left: 31%;
+	}
+
+}
+
+@media (min-width: 2801px) {
+	.last {
+		margin-right: 26%;
+	}
+
+	.brand {
+		left: 26%;
+	}
+
+	#icons {
+		left: 32%;
+	}
+
+}
+
+
+@media (min-width: 701px) {
+	.navbar li {
+		font-size: 110%;
+		display: inline;
+		color: #18453B;
+		padding: 0px 10px 0px 10px;
+	}
+
+	.brand {
+		font-size: 130%;
+		top: 13px;
+	}
+
+	.navbar li:hover {
+		color: black;
+		opacity: .40;
+
+	}
+
+	.navbar ul li.mobileMenu {
+		display: none;
+		font-size: 110%;
+		color: #18453B;
+	}
+}
+
+body {
+	margin: 0px 0px 0px 0px;
+}
+
+.brand {
+	position: absolute;
+	color: #18453B;
+	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.brand:hover {
+	cursor: pointer;
+	opacity: .40;
+}
+
+#icons {
+	position: absolute;
+	top: 13px;
+	display: inline;
+}
+
+.github, .twitter, .linkedin {
+	transition: opacity .25s ease-in-out;
+}
+
+.github:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+.linkedin:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+.twitter:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+
+}
+
+li {
+	list-style-type: none;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: right;
+	background-color: white;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	height: 50px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 #wrap {
-  margin-top: 101px;
+	margin-top: 51px;
+}
+
+object {
+	height: 95vh;
 }
