@@ -451,6 +451,7 @@ a:visited {
 #resume-icon {
 	width: auto;
 	padding-bottom: 10px;
+
 }
 
 #resume-wrapper {
@@ -464,7 +465,13 @@ a:visited {
 	font-style: italic;
 	font-weight: 100;
 	text-align: center;
+	transition: opacity .25s ease-in-out;
 
+}
+
+#resume-wrapper:hover {
+	opacity: .5;
+	cursor: pointer;
 }
 
 #hero:after {
@@ -533,7 +540,14 @@ a:visited {
     -ms-transform: skew(0deg, 10deg);
     -webkit-transform: skew(0deg, 10deg);
     transform: skew(0deg, 10deg);
+    transition: opacity .25s ease-in-out;
 }
+
+#work-icon:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
 
 #projects {
 	z-index: 1;
@@ -575,6 +589,7 @@ a:visited {
 }
 
 .project-type {
+	transition: opacity .25s ease-in-out;
 	display: inherit;
 	flex-direction: column;
 	-webkit-flex-direction: column;
@@ -588,8 +603,14 @@ a:visited {
 }
 
 .project-img {
+	transition: opacity .25s ease-in-out;
 	width: auto;
 	padding-bottom: 20px;
+}
+
+.project-type:hover {
+	opacity: .5;
+	cursor: pointer;
 }
 
 #contact-me-wrap {
@@ -641,7 +662,13 @@ a:visited {
 }
 
 .contact-icon {
+	transition: opacity .25s ease-in-out;
 	width: auto;
+}
+
+.contact-icon:hover {
+	opacity: .5;
+	cursor: pointer;
 }
 
 #copyright {
