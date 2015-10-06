@@ -15,81 +15,68 @@
   	</head>
   	<body>    
 	    <nav class="navbar">
-			<div class="container">
-				<div>
-					<div class="brand" onclick="location.href='index.html'">Bogdan Pozderca</div>
-					<div id="icons">
-						<a href="https://github.com/bogdanpozderca"><img class="github" width="25px" height="25px" src="img/github.png"></a>
-						<a href="https://www.linkedin.com/in/bogdanpozderca"><img class="linkedin" width="25px" height="25px" src="img/linkedin.png"></a>
-						<a href="https://twitter.com/bogdanpozderca"><img class="twitter" width="25px" height="25px" src="img/twitter_circle.png"></a>
-					</div>
+			<div id="nav-wrap">
+				<div id="brand-wrap">
+					<div id="brand" onclick="location.href='index.html'">Bogdan Pozderca</div>
 				</div>
-				<ul>
-					<li class="menu"><a href="#about">About</a></li>
-					<li class="menu"><a href="#contact">Contact</a></li>
-					<li class="menu"><a href="#projects">Projects</a></li>
-					<li class="menu last"><a href="resume.html">Resume</a></li>
-					<li class="mobileMenu"><a href="#mobile"><img class="linkedin" width="30px" height="30px" src="img/mobileMenu.png"></a>
-						<ul style="padding-bottom: 15px">
-							<li><a href="#about">About</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li style='border-bottom-left-radius: 5px; border-bottom-right-radius: 5px'><a href="resume.html">Resume</a></li>
-						</ul>
-					</li>
+				<ul id="menu-wrap">
+					<a href="https://www.linkedin.com/in/bogdanpozderca"><img class="icon desktop" src="img/linkedin.svg"></a>
+					<a href="https://twitter.com/bogdanpozderca"><img class="icon desktop" id="twitter" src="img/twitter.svg"></a>
+					<a href="https://github.com/bogdanpozderca"><img class="icon" src="img/github.svg"></a>
 				</ul>
 			</div>
 	    </nav>
 	
-		<main class="myContent">
-			<div id="fillerBot" style="height: 100vh;">
-				<div id="HiHeader">
-					<h2>Hello. I'm @bogdanpozderca</h2>
-					<a href="https://twitter.com/bogdanpozderca"><img class="HelloTwitter twitter" src="img/twitter.png"></a>
-					<p id="silly">Collected all 151 Pokemon. Makes cool things on the Internet. Problem Solver. Student. Freelance Food Scholar.</p>
-				</div>
-				<i class="fa fa-angle-double-down fa-5x seeMore"></i>
-			</div>
-
-			<div class="section" id="A">
-				<div style="position: relative; height: 100%; width: 100%;">
-					<div id="first" style="position: absolute; height: 100%">
-						<h1 id="school">I study Computer Science at Michigan State University.</h1>
-						<img class="msu" src="img/msu.png">
+		<div id="wrap">
+			<section id="hero">
+				<div id="inner-hero">
+					<div id="resume-wrapper">
+						<img id="resume-icon" src="img/resume-icon.svg">
+						Resume
+					</div>
+					<div id="hero-title-wrapper">
+						<h1 class="hero-title">Michigan State University</h1> 
+						<h1 class="hero-title">Computer Science</h1> 
+						<h1 class="hero-title">Student</h1>					
 					</div>
 				</div>
-			</div>	
 
-			<div class="sectionImg" id="B">
-				<div id="fillerTop" style="height: 25vh;"></div>
-				<div id="fillerBot" style="height: 25.005vh;"></div>
-			</div>	
-			
-			<div class="section" id="C">
-				<div style="position: relative; height: 100%; width: 100%;">
-					<img class="projects" src="img/works.png">
-					<svg class="float" height="100%" width="100%"><line x1="30%" y1="100%" x2="70%" y2="100%"/></svg>
+			</section>
+
+			<section id="work">
+				<h1 id="work-title" class="title">Work Experience</h1>
+				<img id="work-icon" src="img/work-icon.svg">
+
+			</section>
+
+			<section id="projects">
+				<h1 id="project-title" class="title">Projects</h1>
+				<div id="project-type-wrap">
+					<div class="project-type">
+						<img class="project-img" src="img/hackathon.svg">
+						Hackathons
+					</div>
+					<div class="project-type" id="personal">
+						<img class="project-img" src="img/personal.svg">
+						Personal
+					</div>
 				</div>
-			</div>	
+				
+			</section>			
+			<div id="contact-me-wrap">
+				<section id="contact-me">
+					<h1 id="contact-title" class="title">Contact Me</h1>
+					<div id="contact-icon-wrap">
+						<img class="contact-icon" src="img/linkedin-contact.svg">
+						<img class="contact-icon" src="img/email-contact.svg">
+						<img class="contact-icon" src="img/twitter-contact.svg">
+					</div>
+				</section>
+			</div>
+			<div id="copyright">© Copyright 2015 Bogdan Pozderca</div>
+		</div>
 
-			<div class="section" id="D">
-				<div style="position: relative; height: 100%; width: 100%;">
-					<h1 id="projDesc">These are two of the projects I've created in my spare time.</h1>
-				</div>
-			</div>	
-			
-			<div class="sectionImg" id="E">
-				<div id="fillerTop" style="height: 25vh;"></div>
-				<div id="fillerBot" style="height: 25vh;"></div>
-			</div>	
-			
-			<div class="section" id="F"><svg height="100%" width="100%"><line x1="30%" y1="100%" x2="70%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" /></svg></div>	
-			<div class="section" id="G"><svg height="100%" width="100%"><line x1="30%" y1="100%" x2="70%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" /></svg></div>	
-			<div class="section" id="H"><button>Get to know me</button></div>	
-			<!-- <div id="fillerSpace" style="height: 70vh;"></div> -->
 
-	
-		</main>   
 
 
 
