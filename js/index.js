@@ -12,13 +12,6 @@ $(document).ready(function(){
 
 });
 
-var desktop_menu = [
-  {"scroll_to": "#home-nav", "elem": $("#hero")},
-  {"scroll_to": "#faq-nav", "elem": $("#faq")},
-  {"scroll_to": "#mobile-nav", "elem": $("#mobile")},
-  {"scroll_to": "#contact-nav", "elem": $("#contact")},
-];
-
 $(window).scroll(function() {
     var halfHeight = $(this).scrollTop() ;
     var topOffset = $("#projects").offset().top;
