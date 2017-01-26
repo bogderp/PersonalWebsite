@@ -1,46 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Bogdan Pozderca">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
     <title>Bogdan Pozderca</title>
 
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
   </head>
   <body>
-    <nav class="navbar">
-      <div id="nav-wrap">
-        <div id="brand-wrap">
-          <div id="brand" onclick="location.href='index.html'">Bogdan Pozderca</div>
-        </div>
-        <ul id="menu-wrap">
-          <li>
-            <a href="https://www.linkedin.com/in/bogdanpozderca"><img class="icon desktop" src="img/linkedin.svg"></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/bogdanpozderca"><img class="icon desktop" id="twitter" src="img/twitter.svg"></a>
-          </li>
-          <li>
-            <a href="https://github.com/bogdanpozderca"><img class="icon" src="img/github.svg"></a>
-          </li>
-        </ul>
-      </div>
+    <nav>
+      <ul>
+        <li id="home"><img class="icon" src="images/bogdan.png" alt="Bogdan Pozderca">
+          <span>Bogdan</span>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/bogdanpozderca">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/bogdanpozderca">Twitter</a>
+        </li>
+        <li>
+          <a href="https://github.com/bogdanpozderca">Github</a>
+        </li>
+      </ul>
     </nav>
 
-    <div id="wrap">
-      <div id="copyright">© Copyright 2015 Bogdan Pozderca</div>
-    </div>
+    <section id="intro">
+      <h1>Bogdan Pozderca</h1>
+      <div id="quick-links">
+        <a href="#">Resume</a>
+        <a href="#">Contact Me</a>
+      </div>
+    </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="vendor/js/jquery-headroom.min.js"></script>
-    <script src="vendor/js/headroom.min.js"></script>
+    <section id="projects">
+      <h1 class="section-header">
+        Personal Projects
+      </h1>
+      <div id="project-wrap">
+        <div class="project">
+          <div class="project-name">Project Name</div>
+          <p class="project-description">
+            Project Description. Lorem ipsum dolor sit amet, adipiscing egestas nullam Placerat urna parturient nunc nullam iaculis, ipsum urna parturient nunc nullam iaculis, ipsum urna parturient nunc nullam iaculis, ipsum
+          </p>
+          <!-- <div>links</div> -->
+        </div>
+        <div class="project">
+          <div class="project-name">Project Name</div>
+          <p class="project-description">
+            Project Description. Lorem ipsum dolor sit amet.
+          </p>
+          <!-- <div>links</div> -->
+        </div>
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
 
-    <script src="js/index.js" type="text/javascript"></script>
+      </div>
+    </section>
+    <!-- <div id="copyright">© Copyright 2015 Bogdan Pozderca</div> -->
+    <script src="javascripts/index.js" type="text/javascript"></script>
   </body>
 </html>
