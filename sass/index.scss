@@ -1,3 +1,5 @@
+@import 'partials/colors';
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -5,10 +7,10 @@ body {
 }
 
 nav {
-  background-color: #fff;
-  border-bottom: 2px solid #dadada;
+  background-color: $white;
+  border-bottom: 2px solid $alto-gray;
   display: flex;
-  font-family: ubuntu;
+  font-family: Ubuntu;
   font-weight: 300;
   height: 50px;
   position: fixed;
@@ -28,7 +30,7 @@ nav {
     line-height: 50px;
 
     img {
-      border: 1px solid #4a90e2;
+      border: 1px solid $united-nations-blue;
       border-radius: 100px;
       height: 25px;
       margin: auto;
@@ -43,26 +45,6 @@ nav {
       text-decoration: none;
     }
 
-    &#home,
-    a::after {
-      background-color: #4a90e2;
-      bottom: 0;
-      content: '';
-      height: 2px;
-      left: 0;
-      opacity: 0;
-      position: absolute;
-      transition: opacity 0.25s linear;
-      width: 100%;
-    }
-
-    &#home:hover,
-    a:hover {
-      &::after {
-        opacity: 1;
-      }
-    }
-
     &#home {
       align-content: center;
       display: inherit;
@@ -73,10 +55,10 @@ nav {
       position: relative;
       transition: width 1.75s ease-in-out;
       width: 28px;
+    }
 
-      &:hover {
-        width: 100%;
-      }
+    &#home:hover {
+      width: 100%;
     }
 
     span {
@@ -85,14 +67,34 @@ nav {
       margin: auto auto auto 16px;
     }
   }
+
+  li &#home,
+  li a::after {
+    background-color: $united-nations-blue;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .3s linear;
+    width: 100%;
+  }
+
+  li &#home:hover,
+  li a:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 #intro {
   padding-top: 125px;
 
   h1 {
-    color: #1f2833;
-    font-family: ubuntu;
+    color: $gun-metal;
+    font-family: Ubuntu;
     font-size: 24px;
     font-weight: 300;
     margin: 0 0 61px;
@@ -107,7 +109,7 @@ nav {
   }
 
   a {
-    color: #4a90e2;
+    color: $united-nations-blue;
     font-family: Ubuntu;
     font-size: 13px;
     font-weight: 300;
@@ -115,7 +117,7 @@ nav {
     margin: 0 60px 75px 20px;
     position: relative;
     text-decoration: none;
-    transition: opacity 0.25s linear;
+    transition: opacity .25s linear;
 
     &:last-child {
       margin-right: 0;
@@ -123,31 +125,31 @@ nav {
 
     &::before {
       background-color: none;
-      border: 1px solid #4a90e2;
+      border: 1px solid $united-nations-blue;
       border-radius: 25px;
       bottom: 0;
-      box-shadow: inset 0 0 0 2px #fff;
+      box-shadow: inset 0 0 0 2px $white;
       content: '';
       height: 15px;
       left: -20px;
       position: absolute;
       top: 0;
-      transition: background-color 0.25s linear;
+      transition: background-color .25s linear;
       width: 15px;
     }
 
     &:hover {
-      opacity: 0.7;
+      opacity: .7;
+    }
 
-      &::before {
-        background-color: #4a90e2;
-      }
+    &:hover::before {
+      background-color: $united-nations-blue;
     }
   }
 }
 
 .section-header {
-  color: #1f2833;
+  color: $gun-metal;
   font-family: Ubuntu;
   font-size: 16px;
   font-weight: 300;
@@ -158,7 +160,7 @@ nav {
   width: 100%;
 
   &::after {
-    background-color: #dadada;
+    background-color: $alto-gray;
     content: '';
     height: 1px;
     left: 0;
@@ -180,26 +182,26 @@ nav {
   }
 
   #project-wrap:hover .project:not(:hover) {
-    opacity: 0.5;
+    opacity: .5;
   }
 
   .project {
-    background-color: #fff;
-    border: 1px solid #dadada;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .05);
+    background-color: $white;
+    border: 1px solid $alto-gray;
+    box-shadow: 0 2px 6px 0 $very-soft-black;
     height: 210px;
     margin: 5px;
     text-align: left;
-    transition: all 0.25s linear;
+    transition: all .25s linear;
     width: 317px;
 
     &:hover {
-      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .25);
+      box-shadow: 0 2px 6px 0 $quite-soft-black;
     }
   }
 
   .project-name {
-    color: #1f2833;
+    color: $gun-metal;
     font-family: Ubuntu;
     font-size: 14px;
     font-weight: 300;
@@ -210,7 +212,7 @@ nav {
 
     &::before {
       background-color: none;
-      border: 1px solid #4a90e2;
+      border: 1px solid $united-nations-blue;
       border-radius: 25px;
       bottom: 0;
       content: '';
@@ -224,14 +226,14 @@ nav {
 
   .project-description {
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    box-shadow: inset 0 -8px 55px -8px #fff;
-    color: #1f2833;
+    box-shadow: inset 0 -8px 55px -8px $white;
+    color: $gun-metal;
     display: -webkit-box;
     font-family: Ubuntu;
     font-size: 12px;
     font-weight: 300;
     height: 80px;
+    -webkit-line-clamp: 4;
     line-height: 20px;
     margin: 20px 20px 35px;
     overflow-y: hidden;
