@@ -180,7 +180,7 @@ nav li a:hover::after {
       flex-flow: row wrap;
 }
 /* line 40, scss/partials/_grid.scss */
-.grid .container:hover .project:not(:hover) {
+.grid .container:hover .element:not(:hover) {
   opacity: .5;
 }
 /* line 44, scss/partials/_grid.scss */

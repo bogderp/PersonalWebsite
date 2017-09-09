@@ -37,7 +37,7 @@
     flex-flow: row wrap;
   }
 
-  .container:hover .project:not(:hover) {
+  .container:hover .element:not(:hover) {
     opacity: .5;
   }
 
