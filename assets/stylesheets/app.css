@@ -1,7 +1,3 @@
-/* Whites */
-/* Blacks */
-/* Grays */
-/* Blues */
 /* line 1, scss/partials/general/_global.scss */
 body {
   margin: 0 auto;
@@ -176,30 +172,37 @@ nav li a:hover::after {
   font-family: Ubuntu;
   font-size: 16px;
   font-weight: 300;
-  line-height: 20px;
-  margin: 0 0 32px;
+  margin: 0 auto 32px;
   position: relative;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 10px);
 }
-/* line 71, scss/partials/_welcome.scss */
+/* line 70, scss/partials/_welcome.scss */
+.section-header .title {
+  background: #fff;
+  padding-right: 10px;
+}
+/* line 75, scss/partials/_welcome.scss */
 .section-header::after {
   background-color: #dadada;
   content: '';
+  display: block;
   height: 1px;
-  left: 0;
-  margin: 10px 0 0 140px;
+  margin: 0;
   position: absolute;
-  width: calc(100% - 140px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
   z-index: -1;
 }
 
-/* line 83, scss/partials/_welcome.scss */
+/* line 89, scss/partials/_welcome.scss */
 #projects {
   margin: 0 auto 55px;
   max-width: 1316px;
 }
-/* line 87, scss/partials/_welcome.scss */
+/* line 93, scss/partials/_welcome.scss */
 #projects #project-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,11 +214,11 @@ nav li a:hover::after {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
 }
-/* line 93, scss/partials/_welcome.scss */
+/* line 99, scss/partials/_welcome.scss */
 #projects #project-wrap:hover .project:not(:hover) {
   opacity: .5;
 }
-/* line 97, scss/partials/_welcome.scss */
+/* line 103, scss/partials/_welcome.scss */
 #projects .project {
   background-color: #fff;
   border: 1px solid #dadada;
@@ -227,11 +230,11 @@ nav li a:hover::after {
   transition: all .25s linear;
   width: 317px;
 }
-/* line 107, scss/partials/_welcome.scss */
+/* line 113, scss/partials/_welcome.scss */
 #projects .project:hover {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 112, scss/partials/_welcome.scss */
+/* line 118, scss/partials/_welcome.scss */
 #projects .project-name {
   color: #1f2833;
   font-family: Ubuntu;
@@ -242,7 +245,7 @@ nav li a:hover::after {
   position: relative;
   text-decoration: none;
 }
-/* line 122, scss/partials/_welcome.scss */
+/* line 128, scss/partials/_welcome.scss */
 #projects .project-name::before {
   background-color: none;
   border: 1px solid #4a90e2;
@@ -255,7 +258,7 @@ nav li a:hover::after {
   top: 0;
   width: 17px;
 }
-/* line 136, scss/partials/_welcome.scss */
+/* line 142, scss/partials/_welcome.scss */
 #projects .project-description {
   -webkit-box-orient: vertical;
   box-shadow: inset 0 -8px 55px -8px #fff;
