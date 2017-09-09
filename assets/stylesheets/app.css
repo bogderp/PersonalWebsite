@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'ubuntu';
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/ubuntu-l-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/ubuntu-l-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-l-webfont.woff2") format("woff2"), url("../fonts/ubuntu-l-webfont.woff") format("woff"), url("../fonts/ubuntu-l-webfont.ttf") format("truetype"), url("../fonts/ubuntu-l-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
 /* line 1, scss/partials/general/_global.scss */
 body {
   margin: 0 auto;
@@ -300,7 +309,7 @@ nav li a:hover::after {
 }
 
 @media screen and (min-width: 480px) and (max-width: 1440px) {
-  /* line 9, scss/app.scss */
+  /* line 10, scss/app.scss */
   .center {
     margin: auto;
     max-width: 1340px !important;
@@ -308,7 +317,7 @@ nav li a:hover::after {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 17, scss/app.scss */
+  /* line 18, scss/app.scss */
   .center {
     margin-left: 25px !important;
     margin-right: 25px !important;

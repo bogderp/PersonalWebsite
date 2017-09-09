@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'ubuntu';
+  font-weight: 100;
+  font-style: normal;
+  src: url("#{$font-path}/ubuntu-l-webfont.eot"); /* IE9 Compat Modes */
+  src: url("#{$font-path}/ubuntu-l-webfont.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+       url("#{$font-path}/ubuntu-l-webfont.woff2") format('woff2'), /* Super Modern Browsers */
+       url("#{$font-path}/ubuntu-l-webfont.woff") format('woff'), /* Pretty Modern Browsers */
+       url("#{$font-path}/ubuntu-l-webfont.ttf")  format('truetype'), /* Safari, Android, iOS */
+       url("#{$font-path}/ubuntu-l-webfont.svg#svgFontName") format('svg'); /* Legacy iOS */
+}
