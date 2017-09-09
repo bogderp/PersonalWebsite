@@ -1,3 +1,47 @@
+@-webkit-keyframes wobble {
+  0%, 48%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  12%, 36% {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  24% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  60%, 84% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+  }
+  72% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+@keyframes wobble {
+  0%, 48%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  12%, 36% {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  24% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  60%, 84% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+  }
+  72% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
 @font-face {
   font-family: 'Ubuntu-Light';
   font-style: normal;
@@ -335,8 +379,20 @@ nav li a:hover::after {
   overflow-y: hidden;
 }
 
+/* line 99, scss/partials/_welcome.scss */
+.footer {
+  font-family: Ubuntu;
+  font-size: 16px;
+}
+/* line 103, scss/partials/_welcome.scss */
+.footer .question .mark {
+  -webkit-animation: wobble 2s linear infinite;
+          animation: wobble 2s linear infinite;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 480px) and (max-width: 1440px) {
-  /* line 10, scss/app.scss */
+  /* line 11, scss/app.scss */
   .center {
     margin: auto;
     max-width: 1340px !important;
@@ -344,7 +400,7 @@ nav li a:hover::after {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 18, scss/app.scss */
+  /* line 19, scss/app.scss */
   .center {
     margin-left: 25px !important;
     margin-right: 25px !important;

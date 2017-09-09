@@ -95,3 +95,13 @@
   margin: 20px 20px 35px;
   overflow-y: hidden;
 }
+
+.footer {
+  font-family: $ubuntu;
+  font-size: 16px;
+
+  .question .mark {
+    animation: wobble 2s linear infinite;
+    font-size: 20px;
+  }
+}
