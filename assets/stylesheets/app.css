@@ -96,6 +96,98 @@ nav li a:hover::after {
   opacity: 1;
 }
 
+/* line 1, scss/partials/_grid.scss */
+.grid {
+  margin: 0 auto 55px;
+  max-width: calc(1440px - 100px);
+}
+/* line 5, scss/partials/_grid.scss */
+.grid .header {
+  color: #1f2833;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 auto 32px;
+  position: relative;
+  text-align: left;
+  width: calc(100% - 10px);
+}
+/* line 15, scss/partials/_grid.scss */
+.grid .header .title {
+  background: #fff;
+  padding-right: 10px;
+}
+/* line 20, scss/partials/_grid.scss */
+.grid .header::after {
+  background-color: #dadada;
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  z-index: -1;
+}
+/* line 34, scss/partials/_grid.scss */
+.grid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+/* line 40, scss/partials/_grid.scss */
+.grid .container:hover .project:not(:hover) {
+  opacity: .5;
+}
+/* line 44, scss/partials/_grid.scss */
+.grid .element {
+  background-color: #fff;
+  border: 1px solid #dadada;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  height: 210px;
+  margin: 5px;
+  min-width: 260px;
+  text-align: left;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  width: calc(25% - 10px);
+}
+/* line 57, scss/partials/_grid.scss */
+.grid .element:hover {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+}
+/* line 61, scss/partials/_grid.scss */
+.grid .element.expand {
+  width: calc(50% - 10px);
+}
+
+@media screen and (min-width: 910px) and (max-width: 1179px) {
+  /* line 68, scss/partials/_grid.scss */
+  .grid .container .element {
+    width: calc(33% - 8px);
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 909px) {
+  /* line 74, scss/partials/_grid.scss */
+  .grid .container .element {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 639px) {
+  /* line 80, scss/partials/_grid.scss */
+  .grid .container .element {
+    width: calc(100% - 10px);
+  }
+}
 /* line 1, scss/partials/_welcome.scss */
 #intro {
   padding-top: 125px;
@@ -167,75 +259,7 @@ nav li a:hover::after {
 }
 
 /* line 60, scss/partials/_welcome.scss */
-.section-header {
-  color: #1f2833;
-  font-family: Ubuntu;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0 auto 32px;
-  position: relative;
-  text-align: left;
-  width: calc(100% - 10px);
-}
-/* line 70, scss/partials/_welcome.scss */
-.section-header .title {
-  background: #fff;
-  padding-right: 10px;
-}
-/* line 75, scss/partials/_welcome.scss */
-.section-header::after {
-  background-color: #dadada;
-  content: '';
-  display: block;
-  height: 1px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
-  z-index: -1;
-}
-
-/* line 89, scss/partials/_welcome.scss */
-#projects {
-  margin: 0 auto 55px;
-  max-width: 1316px;
-}
-/* line 93, scss/partials/_welcome.scss */
-#projects #project-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-}
-/* line 99, scss/partials/_welcome.scss */
-#projects #project-wrap:hover .project:not(:hover) {
-  opacity: .5;
-}
-/* line 103, scss/partials/_welcome.scss */
-#projects .project {
-  background-color: #fff;
-  border: 1px solid #dadada;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
-  height: 210px;
-  margin: 5px;
-  text-align: left;
-  -webkit-transition: all .25s linear;
-  transition: all .25s linear;
-  width: 317px;
-}
-/* line 113, scss/partials/_welcome.scss */
-#projects .project:hover {
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
-}
-/* line 118, scss/partials/_welcome.scss */
-#projects .project-name {
+.project-name {
   color: #1f2833;
   font-family: Ubuntu;
   font-size: 14px;
@@ -245,8 +269,8 @@ nav li a:hover::after {
   position: relative;
   text-decoration: none;
 }
-/* line 128, scss/partials/_welcome.scss */
-#projects .project-name::before {
+/* line 70, scss/partials/_welcome.scss */
+.project-name::before {
   background-color: none;
   border: 1px solid #4a90e2;
   border-radius: 25px;
@@ -258,8 +282,9 @@ nav li a:hover::after {
   top: 0;
   width: 17px;
 }
-/* line 142, scss/partials/_welcome.scss */
-#projects .project-description {
+
+/* line 84, scss/partials/_welcome.scss */
+.project-description {
   -webkit-box-orient: vertical;
   box-shadow: inset 0 -8px 55px -8px #fff;
   color: #1f2833;
@@ -272,4 +297,22 @@ nav li a:hover::after {
   line-height: 20px;
   margin: 20px 20px 35px;
   overflow-y: hidden;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1440px) {
+  /* line 9, scss/app.scss */
+  .center {
+    margin: auto;
+    max-width: 1340px !important;
+    width: calc(100% - 100px) !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 17, scss/app.scss */
+  .center {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+    max-width: 430px !important;
+    width: calc(100% - 50px) !important;
+  }
 }

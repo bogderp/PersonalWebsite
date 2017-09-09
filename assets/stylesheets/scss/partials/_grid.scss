@@ -1,0 +1,83 @@
+.grid {
+  margin: 0 auto 55px;
+  max-width: calc(#{ $max-site-width } - 100px);
+
+  .header {
+    color: $gun-metal;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 auto 32px;
+    position: relative;
+    text-align: left;
+    width: calc(100% - 10px);
+
+    .title {
+      background: $white;
+      padding-right: 10px;
+    }
+
+    &::after {
+      background-color: $alto-gray;
+      content: '';
+      display: block;
+      height: 1px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+
+  .container:hover .project:not(:hover) {
+    opacity: .5;
+  }
+
+  .element {
+    background-color: $white;
+    border: 1px solid $alto-gray;
+    box-shadow: 0 2px 6px 0 $very-soft-black;
+    box-sizing: border-box;
+    height: 210px;
+    margin: 5px;
+    min-width: 260px;
+    text-align: left;
+    transition: all .2s linear;
+    width: calc(25% - 10px);
+
+
+    &:hover {
+      box-shadow: 0 2px 6px 0 $quite-soft-black;
+    }
+
+    &.expand {
+      width: calc(50% - 10px);
+    }
+  }
+}
+
+@media screen and (min-width: $max-grid-tri-width) and (max-width: $max-grid-quad-width - 1px) {
+  .grid .container .element {
+    width: calc(33% - 8px);
+  }
+}
+
+@media screen and (min-width: $max-grid-duo-width) and (max-width: $max-grid-tri-width - 1px) {
+  .grid .container .element {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: $max-grid-duo-width - 1px) {
+  .grid .container .element {
+    width: calc(100% - 10px);
+  }
+}
