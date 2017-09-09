@@ -102,6 +102,7 @@
 
   .question .mark {
     animation: wobble 2s linear infinite;
+    display: inline-block;
     font-size: 20px;
   }
 }
