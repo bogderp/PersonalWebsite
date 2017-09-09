@@ -5,11 +5,11 @@ require 'font-awesome-sass'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "stylesheets"
-sass_dir = "sass"
-images_dir = "images"
-javascripts_dir = "javascripts"
-fonts_dir = "fonts"
+css_dir = "assets/stylesheets"
+sass_dir = "assets/stylesheets/scss"
+images_dir = "assets/images"
+javascripts_dir = "assets/javascripts"
+fonts_dir = "assets/fonts"
 
 on_stylesheet_saved do |file|
   css = File.read(file)
