@@ -3,7 +3,7 @@
 
   h1 {
     color: $gun-metal;
-    font-family: Ubuntu;
+    font-family: $ubuntu;
     font-size: 24px;
     font-weight: 300;
     margin: 0 0 61px;
@@ -19,7 +19,7 @@
 
   a {
     color: $united-nations-blue;
-    font-family: Ubuntu;
+    font-family: $ubuntu;
     font-size: 13px;
     font-weight: 300;
     line-height: 17px;
@@ -59,7 +59,7 @@
 
 .project-name {
   color: $gun-metal;
-  font-family: Ubuntu;
+  font-family: $ubuntu;
   font-size: 14px;
   font-weight: 300;
   line-height: 19px;
@@ -86,7 +86,7 @@
   box-shadow: inset 0 -8px 55px -8px $white;
   color: $gun-metal;
   display: -webkit-box;
-  font-family: Ubuntu;
+  font-family: $ubuntu;
   font-size: 12px;
   font-weight: 300;
   height: 80px;

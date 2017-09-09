@@ -1,5 +1,13 @@
 // Fonts
 $font-path: '../fonts';
+$ubuntu-font-path: '#{$font-path}/ubuntu';
+
+$ubuntu: Ubuntu;
+$ubuntu-italic: Ubuntu-Italic;
+$ubuntu-medium: Ubuntu-Medium;
+$ubuntu-medium-italic: Ubuntu-Medium-Italic;
+$ubuntu-light: Ubuntu-Light;
+$ubuntu-light-italic: Ubuntu-Light-Italic;
 
 // Site Responsiveness
 $max-site-width: 1440px;
