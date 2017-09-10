@@ -444,35 +444,35 @@ nav li a:hover::after {
 
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=red] {
-  border-color: #ff6961;
+  border-color: rgba(255, 105, 97, 0.5);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=orange] {
-  border-color: #ea7317;
+  border-color: rgba(234, 115, 23, 0.5);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=yellow] {
-  border-color: #f4e04d;
+  border-color: rgba(244, 224, 77, 0.5);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=green] {
-  border-color: #b4d7b2;
+  border-color: rgba(180, 215, 178, 0.5);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=blue] {
-  border-color: #4a90e2;
+  border-color: rgba(74, 144, 226, 0.5);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=purple] {
-  border-color: #5941a9;
+  border-color: rgba(89, 65, 169, 0.5);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=violet] {
-  border-color: #b19cd9;
+  border-color: rgba(177, 156, 217, 0.5);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=gray] {
-  border-color: #7a7677;
+  border-color: rgba(122, 118, 119, 0.5);
 }
 /* line 63, scss/partials/_welcome.scss */
 .project:hover .project-name::before {

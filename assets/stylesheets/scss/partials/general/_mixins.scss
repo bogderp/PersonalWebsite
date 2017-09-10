@@ -26,7 +26,8 @@
 
   @each $color, $value in $circle-colors {
     &[data-color=#{$color}] {
-      border-color: $value;
+      border-color: rgba($value, .5);
+
     }
   }
 }
