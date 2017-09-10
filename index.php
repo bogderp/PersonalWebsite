@@ -51,8 +51,8 @@
       <div class="container">
 
         <?php foreach ($projects as $project) { ?>
-        <div class="element project">
-          <div class="project-name" data-color=<?php echo $project->getColor() ?> >
+        <div class="element project" data-color="<?php echo $project->getColor() ?>">
+          <div class="project-name" data-color="<?php echo $project->getColor() ?>" >
             <?php echo $project->getTitle() ?>
           </div>
           <p class="project-description">

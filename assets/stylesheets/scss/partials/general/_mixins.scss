@@ -11,9 +11,22 @@
 @mixin circle-colors-background {
 
   @each $color, $value in $circle-colors {
+    .project-name[data-color=#{$color}] {
+      color: $value;
+    }
+
     .project-name[data-color=#{$color}]::before,
     .project-name[data-color=#{$color}]::after {
       background-color: $value;
+    }
+  }
+}
+
+@mixin project-border {
+
+  @each $color, $value in $circle-colors {
+    &[data-color=#{$color}] {
+      border-color: $value;
     }
   }
 }

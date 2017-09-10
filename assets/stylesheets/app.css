@@ -442,54 +442,118 @@ nav li a:hover::after {
   background-color: #4a90e2;
 }
 
-/* line 61, scss/partials/_welcome.scss */
+/* line 28, scss/partials/general/_mixins.scss */
+.project:hover[data-color=red] {
+  border-color: #ff6961;
+}
+/* line 28, scss/partials/general/_mixins.scss */
+.project:hover[data-color=orange] {
+  border-color: #ea7317;
+}
+/* line 28, scss/partials/general/_mixins.scss */
+.project:hover[data-color=yellow] {
+  border-color: #f4e04d;
+}
+/* line 28, scss/partials/general/_mixins.scss */
+.project:hover[data-color=green] {
+  border-color: #b4d7b2;
+}
+/* line 28, scss/partials/general/_mixins.scss */
+.project:hover[data-color=blue] {
+  border-color: #4a90e2;
+}
+/* line 28, scss/partials/general/_mixins.scss */
+.project:hover[data-color=purple] {
+  border-color: #5941a9;
+}
+/* line 28, scss/partials/general/_mixins.scss */
+.project:hover[data-color=violet] {
+  border-color: #b19cd9;
+}
+/* line 28, scss/partials/general/_mixins.scss */
+.project:hover[data-color=gray] {
+  border-color: #7a7677;
+}
+/* line 63, scss/partials/_welcome.scss */
 .project:hover .project-name::before {
   -webkit-animation: z-bounce .2s linear;
           animation: z-bounce .2s linear;
   background-color: #4a90e2;
 }
 /* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=red] {
+  color: #ff6961;
+}
+/* line 18, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=red]::before,
 .project:hover .project-name[data-color=red]::after {
-  background-color: #e94f37;
+  background-color: #ff6961;
 }
 /* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=orange] {
+  color: #ea7317;
+}
+/* line 18, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=orange]::before,
 .project:hover .project-name[data-color=orange]::after {
   background-color: #ea7317;
 }
 /* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=yellow] {
+  color: #f4e04d;
+}
+/* line 18, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=yellow]::before,
 .project:hover .project-name[data-color=yellow]::after {
   background-color: #f4e04d;
 }
 /* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=green] {
+  color: #b4d7b2;
+}
+/* line 18, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=green]::before,
 .project:hover .project-name[data-color=green]::after {
   background-color: #b4d7b2;
 }
 /* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=blue] {
+  color: #4a90e2;
+}
+/* line 18, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=blue]::before,
 .project:hover .project-name[data-color=blue]::after {
   background-color: #4a90e2;
 }
 /* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=purple] {
+  color: #5941a9;
+}
+/* line 18, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=purple]::before,
 .project:hover .project-name[data-color=purple]::after {
   background-color: #5941a9;
 }
 /* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=violet] {
+  color: #b19cd9;
+}
+/* line 18, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=violet]::before,
 .project:hover .project-name[data-color=violet]::after {
   background-color: #b19cd9;
 }
 /* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=gray] {
+  color: #7a7677;
+}
+/* line 18, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=gray]::before,
 .project:hover .project-name[data-color=gray]::after {
   background-color: #7a7677;
 }
 
-/* line 69, scss/partials/_welcome.scss */
+/* line 71, scss/partials/_welcome.scss */
 .project-name {
   color: #1f2833;
   font-family: Ubuntu;
@@ -499,8 +563,10 @@ nav li a:hover::after {
   margin: 20px 0 0 56px;
   position: relative;
   text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
-/* line 79, scss/partials/_welcome.scss */
+/* line 82, scss/partials/_welcome.scss */
 .project-name::before, .project-name::after {
   background-color: none;
   border: 1px solid #4a90e2;
@@ -514,13 +580,13 @@ nav li a:hover::after {
   width: 17px;
   will-change: transform;
 }
-/* line 93, scss/partials/_welcome.scss */
+/* line 96, scss/partials/_welcome.scss */
 .project-name::before {
   -webkit-animation: z-bounce-back .2s linear;
           animation: z-bounce-back .2s linear;
   z-index: 1;
 }
-/* line 98, scss/partials/_welcome.scss */
+/* line 101, scss/partials/_welcome.scss */
 .project-name::after {
   -webkit-animation: fadeOut .2s linear forwards;
           animation: fadeOut .2s linear forwards;
@@ -535,7 +601,7 @@ nav li a:hover::after {
 }
 /* line 4, scss/partials/general/_mixins.scss */
 .project-name[data-color=red]::before, .project-name[data-color=red]::after {
-  border-color: #e94f37;
+  border-color: #ff6961;
 }
 /* line 4, scss/partials/general/_mixins.scss */
 .project-name[data-color=orange]::before, .project-name[data-color=orange]::after {
@@ -566,7 +632,7 @@ nav li a:hover::after {
   border-color: #7a7677;
 }
 
-/* line 112, scss/partials/_welcome.scss */
+/* line 115, scss/partials/_welcome.scss */
 .project-description {
   -webkit-box-orient: vertical;
   box-shadow: inset 0 -8px 55px -8px #fff;
@@ -582,12 +648,12 @@ nav li a:hover::after {
   overflow-y: hidden;
 }
 
-/* line 127, scss/partials/_welcome.scss */
+/* line 130, scss/partials/_welcome.scss */
 .footer {
   font-family: Ubuntu;
   font-size: 16px;
 }
-/* line 131, scss/partials/_welcome.scss */
+/* line 134, scss/partials/_welcome.scss */
 .footer .question .mark {
   -webkit-animation: wobble 2s linear infinite;
           animation: wobble 2s linear infinite;

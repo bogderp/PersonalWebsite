@@ -58,6 +58,8 @@
 }
 
 .project:hover {
+  @include project-border();
+  
   .project-name::before {
     animation: z-bounce .2s linear;
     background-color: $united-nations-blue;
@@ -75,6 +77,7 @@
   margin: 20px 0 0 56px;
   position: relative;
   text-decoration: none;
+  transition: all .2s ease-in-out;
 
   &::before,
   &::after {
