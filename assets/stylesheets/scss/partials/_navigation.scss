@@ -1,4 +1,16 @@
+@keyframes nav-drop-in {
+  from {
+    top: -50px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
 nav {
+  animation: nav-drop-in .2s linear forwards;
+  animation-delay: .4s;
   background-color: $white;
   border-bottom: 2px solid $alto-gray;
   display: flex;
@@ -6,6 +18,8 @@ nav {
   font-weight: 300;
   height: 50px;
   position: fixed;
+  top: -50px;
+  transition: all .2s ease-in-out;
   width: 100%;
   z-index: 1000;
 
