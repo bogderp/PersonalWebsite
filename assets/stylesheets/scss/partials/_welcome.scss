@@ -59,13 +59,12 @@
 
 .project:hover {
   @include project-border();
-  
+  @include circle-colors-background();
+
   .project-name::before {
     animation: z-bounce .2s linear;
-    background-color: $united-nations-blue;
   }
 
-  @include circle-colors-background();
 }
 
 .project-name {
