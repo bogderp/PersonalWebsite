@@ -1,3 +1,8 @@
+<?php
+  require 'lib/site.inc.php';
+  $projects = (new Bogdan\Projects($site))->all();
+?>
+
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -42,30 +47,24 @@
       <h1 class="header">
         <span class="title">Personal Projects</span>
       </h1>
-      <div class="container">
-        <div class="element">
-          <div class="project-name">Project Name</div>
-          <p class="project-description">
-            Project Description. Lorem ipsum dolor sit amet, adipiscing egestas nullam Placerat urna parturient nunc nullam iaculis, ipsum urna parturient nunc nullam iaculis, ipsum urna parturient nunc nullam iaculis, ipsum
-          </p>
-          <!-- <div>links</div> -->
-        </div>
-        <div class="element">
-          <div class="project-name">Project Name</div>
-          <p class="project-description">
-            Project Description. Lorem ipsum dolor sit amet.
-          </p>
-          <!-- <div>links</div> -->
-        </div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
 
+      <div class="container">
+
+        <?php foreach ($projects as $project) { ?>
+        <div class="element">
+          <div class="project-name">
+            <?php echo $project->getTitle() ?>
+          </div>
+          <p class="project-description">
+            <?php echo $project->getDescription() ?>
+          </p>
+          <!-- <div>links</div> -->
+        </div>
+        <?php } ?>
+        
       </div>
     </section>
+
     <section class="footer">
       <p class="question">
         <span class="text">Hey, did you notice there's no JS on here</span>

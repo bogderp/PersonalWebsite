@@ -1,5 +1,6 @@
 .DS_Store
 .sass-cache
+.env
 Bogdan-Site.ai
 Compilation.xcf
 cat.svg
