@@ -57,6 +57,15 @@
   }
 }
 
+.project:hover {
+  .project-name::before {
+    animation: z-bounce .2s linear;
+    background-color: $united-nations-blue;
+  }
+
+  @include circle-colors-background();
+}
+
 .project-name {
   color: $gun-metal;
   font-family: $ubuntu;
@@ -67,18 +76,37 @@
   position: relative;
   text-decoration: none;
 
-  &::before {
+  &::before,
+  &::after {
     background-color: none;
     border: 1px solid $united-nations-blue;
     border-radius: 25px;
-    bottom: 0;
     content: '';
     height: 17px;
     left: -36px;
     position: absolute;
-    top: 0;
+    transition: all .2s ease-in-out;
     width: 17px;
+    will-change: transform;
   }
+
+  &::before {
+    animation: z-bounce-back .2s linear;
+    z-index: 1;
+  }
+
+  &::after {
+    animation: fadeOut .2s linear forwards;
+    animation-delay: 1s;
+    background: $white;
+    left: -46px;
+    margin: 9px;
+    padding: 1px;
+    top: -10px;
+    z-index: 2;
+  }
+
+  @include circle-colors-border();
 }
 
 .project-description {

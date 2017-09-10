@@ -43,6 +43,7 @@ SQL;
   public function all() {
     $sql =<<<SQL
 SELECT * from $this->tableName
+ORDER BY id
 SQL;
 
     $pdo = $this->pdo();
@@ -59,7 +60,7 @@ SQL;
     foreach ($result as $project) {
       $return[] = new Project($project);
     }
-    
+
     return $return;
   }
 

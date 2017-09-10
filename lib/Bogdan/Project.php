@@ -14,6 +14,7 @@ class Project {
   private $id;		         ///< The internal ID for the project
   private $title;		       ///< Project name
   private $description; 	 ///< Description
+  private $color; 	       ///< Main Color
   private $github; 	       ///< github source
   private $demo;	         ///< Demo link
 
@@ -25,6 +26,7 @@ class Project {
     $this->id = $row['id'];
     $this->title = $row['title'];
     $this->description = $row['description'];
+    $this->color = $row['color'];
     $this->github = $row['github'];
     $this->demo = $row['demo'];
   }
@@ -48,6 +50,13 @@ class Project {
    */
   public function getDescription() {
     return $this->description;
+  }
+
+  /**
+   * @return mixed
+   */
+  public function getColor() {
+    return $this->color;
   }
 
   /**

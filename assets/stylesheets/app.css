@@ -42,6 +42,110 @@
             transform: rotate(-15deg);
   }
 }
+@-webkit-keyframes z-bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes z-bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes z-bounce-back {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes z-bounce-back {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @font-face {
   font-family: 'Ubuntu-Light';
   font-style: normal;
@@ -338,7 +442,54 @@ nav li a:hover::after {
   background-color: #4a90e2;
 }
 
-/* line 60, scss/partials/_welcome.scss */
+/* line 61, scss/partials/_welcome.scss */
+.project:hover .project-name::before {
+  -webkit-animation: z-bounce .2s linear;
+          animation: z-bounce .2s linear;
+  background-color: #4a90e2;
+}
+/* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=red]::before,
+.project:hover .project-name[data-color=red]::after {
+  background-color: #e94f37;
+}
+/* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=orange]::before,
+.project:hover .project-name[data-color=orange]::after {
+  background-color: #ea7317;
+}
+/* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=yellow]::before,
+.project:hover .project-name[data-color=yellow]::after {
+  background-color: #f4e04d;
+}
+/* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=green]::before,
+.project:hover .project-name[data-color=green]::after {
+  background-color: #b4d7b2;
+}
+/* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=blue]::before,
+.project:hover .project-name[data-color=blue]::after {
+  background-color: #4a90e2;
+}
+/* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=purple]::before,
+.project:hover .project-name[data-color=purple]::after {
+  background-color: #5941a9;
+}
+/* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=violet]::before,
+.project:hover .project-name[data-color=violet]::after {
+  background-color: #b19cd9;
+}
+/* line 14, scss/partials/general/_mixins.scss */
+.project:hover .project-name[data-color=gray]::before,
+.project:hover .project-name[data-color=gray]::after {
+  background-color: #7a7677;
+}
+
+/* line 69, scss/partials/_welcome.scss */
 .project-name {
   color: #1f2833;
   font-family: Ubuntu;
@@ -349,21 +500,73 @@ nav li a:hover::after {
   position: relative;
   text-decoration: none;
 }
-/* line 70, scss/partials/_welcome.scss */
-.project-name::before {
+/* line 79, scss/partials/_welcome.scss */
+.project-name::before, .project-name::after {
   background-color: none;
   border: 1px solid #4a90e2;
   border-radius: 25px;
-  bottom: 0;
   content: '';
   height: 17px;
   left: -36px;
   position: absolute;
-  top: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   width: 17px;
+  will-change: transform;
+}
+/* line 93, scss/partials/_welcome.scss */
+.project-name::before {
+  -webkit-animation: z-bounce-back .2s linear;
+          animation: z-bounce-back .2s linear;
+  z-index: 1;
+}
+/* line 98, scss/partials/_welcome.scss */
+.project-name::after {
+  -webkit-animation: fadeOut .2s linear forwards;
+          animation: fadeOut .2s linear forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  background: #fff;
+  left: -46px;
+  margin: 9px;
+  padding: 1px;
+  top: -10px;
+  z-index: 2;
+}
+/* line 4, scss/partials/general/_mixins.scss */
+.project-name[data-color=red]::before, .project-name[data-color=red]::after {
+  border-color: #e94f37;
+}
+/* line 4, scss/partials/general/_mixins.scss */
+.project-name[data-color=orange]::before, .project-name[data-color=orange]::after {
+  border-color: #ea7317;
+}
+/* line 4, scss/partials/general/_mixins.scss */
+.project-name[data-color=yellow]::before, .project-name[data-color=yellow]::after {
+  border-color: #f4e04d;
+}
+/* line 4, scss/partials/general/_mixins.scss */
+.project-name[data-color=green]::before, .project-name[data-color=green]::after {
+  border-color: #b4d7b2;
+}
+/* line 4, scss/partials/general/_mixins.scss */
+.project-name[data-color=blue]::before, .project-name[data-color=blue]::after {
+  border-color: #4a90e2;
+}
+/* line 4, scss/partials/general/_mixins.scss */
+.project-name[data-color=purple]::before, .project-name[data-color=purple]::after {
+  border-color: #5941a9;
+}
+/* line 4, scss/partials/general/_mixins.scss */
+.project-name[data-color=violet]::before, .project-name[data-color=violet]::after {
+  border-color: #b19cd9;
+}
+/* line 4, scss/partials/general/_mixins.scss */
+.project-name[data-color=gray]::before, .project-name[data-color=gray]::after {
+  border-color: #7a7677;
 }
 
-/* line 84, scss/partials/_welcome.scss */
+/* line 112, scss/partials/_welcome.scss */
 .project-description {
   -webkit-box-orient: vertical;
   box-shadow: inset 0 -8px 55px -8px #fff;
@@ -379,12 +582,12 @@ nav li a:hover::after {
   overflow-y: hidden;
 }
 
-/* line 99, scss/partials/_welcome.scss */
+/* line 127, scss/partials/_welcome.scss */
 .footer {
   font-family: Ubuntu;
   font-size: 16px;
 }
-/* line 103, scss/partials/_welcome.scss */
+/* line 131, scss/partials/_welcome.scss */
 .footer .question .mark {
   -webkit-animation: wobble 2s linear infinite;
           animation: wobble 2s linear infinite;
@@ -393,7 +596,7 @@ nav li a:hover::after {
 }
 
 @media screen and (min-width: 480px) and (max-width: 1440px) {
-  /* line 11, scss/app.scss */
+  /* line 12, scss/app.scss */
   .center {
     margin: auto;
     max-width: 1340px !important;
@@ -401,7 +604,7 @@ nav li a:hover::after {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 19, scss/app.scss */
+  /* line 20, scss/app.scss */
   .center {
     margin-left: 25px !important;
     margin-right: 25px !important;
