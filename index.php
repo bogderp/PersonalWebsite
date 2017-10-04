@@ -45,7 +45,7 @@
 
     <section class="grid center">
       <h1 class="header">
-        <span class="title">Personal Projects</span>
+        <span class="title">Personal & Contributed Projects</span>
       </h1>
 
       <div class="container">
