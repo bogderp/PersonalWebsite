@@ -468,35 +468,35 @@ nav li a:hover::after {
 
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=red] {
-  border-color: rgba(255, 105, 97, 0.5);
+  border-color: rgba(255, 105, 97, 0.75);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=orange] {
-  border-color: rgba(234, 115, 23, 0.5);
+  border-color: rgba(255, 179, 71, 0.75);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=yellow] {
-  border-color: rgba(244, 224, 77, 0.5);
+  border-color: rgba(244, 224, 77, 0.75);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=green] {
-  border-color: rgba(180, 215, 178, 0.5);
+  border-color: rgba(180, 215, 178, 0.75);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=blue] {
-  border-color: rgba(74, 144, 226, 0.5);
+  border-color: rgba(74, 144, 226, 0.75);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=purple] {
-  border-color: rgba(89, 65, 169, 0.5);
+  border-color: rgba(89, 65, 169, 0.75);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=violet] {
-  border-color: rgba(177, 156, 217, 0.5);
+  border-color: rgba(177, 156, 217, 0.75);
 }
 /* line 28, scss/partials/general/_mixins.scss */
 .project:hover[data-color=gray] {
-  border-color: rgba(122, 118, 119, 0.5);
+  border-color: rgba(122, 118, 119, 0.75);
 }
 /* line 14, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=red] {
@@ -509,12 +509,12 @@ nav li a:hover::after {
 }
 /* line 14, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=orange] {
-  color: #ea7317;
+  color: #ffb347;
 }
 /* line 18, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=orange]::before,
 .project:hover .project-name[data-color=orange]::after {
-  background-color: #ea7317;
+  background-color: #ffb347;
 }
 /* line 14, scss/partials/general/_mixins.scss */
 .project:hover .project-name[data-color=yellow] {
@@ -628,7 +628,7 @@ nav li a:hover::after {
 }
 /* line 4, scss/partials/general/_mixins.scss */
 .project-name[data-color=orange]::before, .project-name[data-color=orange]::after {
-  border-color: #ea7317;
+  border-color: #ffb347;
 }
 /* line 4, scss/partials/general/_mixins.scss */
 .project-name[data-color=yellow]::before, .project-name[data-color=yellow]::after {
@@ -672,11 +672,66 @@ nav li a:hover::after {
 }
 
 /* line 129, scss/partials/_welcome.scss */
+.project-link-container {
+  padding: 0 20px;
+}
+
+/* line 133, scss/partials/_welcome.scss */
+.project-link {
+  display: inline-block;
+  padding: 0 5px;
+}
+/* line 38, scss/partials/general/_mixins.scss */
+.project-link[data-color=red]:hover svg {
+  fill: #ff6961;
+}
+/* line 38, scss/partials/general/_mixins.scss */
+.project-link[data-color=orange]:hover svg {
+  fill: #ffb347;
+}
+/* line 38, scss/partials/general/_mixins.scss */
+.project-link[data-color=yellow]:hover svg {
+  fill: #f4e04d;
+}
+/* line 38, scss/partials/general/_mixins.scss */
+.project-link[data-color=green]:hover svg {
+  fill: #b4d7b2;
+}
+/* line 38, scss/partials/general/_mixins.scss */
+.project-link[data-color=blue]:hover svg {
+  fill: #4a90e2;
+}
+/* line 38, scss/partials/general/_mixins.scss */
+.project-link[data-color=purple]:hover svg {
+  fill: #5941a9;
+}
+/* line 38, scss/partials/general/_mixins.scss */
+.project-link[data-color=violet]:hover svg {
+  fill: #b19cd9;
+}
+/* line 38, scss/partials/general/_mixins.scss */
+.project-link[data-color=gray]:hover svg {
+  fill: #7a7677;
+}
+/* line 138, scss/partials/_welcome.scss */
+.project-link:first-child {
+  padding-left: 0;
+}
+/* line 142, scss/partials/_welcome.scss */
+.project-link svg {
+  color: #1f2833;
+  max-height: 15px;
+  max-width: 15px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+/* line 150, scss/partials/_welcome.scss */
 .footer {
   font-family: Ubuntu;
   font-size: 16px;
 }
-/* line 133, scss/partials/_welcome.scss */
+/* line 154, scss/partials/_welcome.scss */
 .footer .question .mark {
   -webkit-animation: wobble 2s linear infinite;
           animation: wobble 2s linear infinite;

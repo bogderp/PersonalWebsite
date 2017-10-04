@@ -126,6 +126,27 @@
   overflow-y: hidden;
 }
 
+.project-link-container {
+  padding: 0 20px;
+}
+
+.project-link {
+  @include project-link();
+  display: inline-block;
+  padding: 0 5px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  svg {
+    color: $gun-metal;
+    max-height: 15px;
+    max-width: 15px;
+    transition: all .2s ease-in;
+  }
+}
+
 .footer {
   font-family: $ubuntu;
   font-size: 16px;
