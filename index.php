@@ -38,8 +38,8 @@
     <section id="intro">
       <h1>Bogdan Pozderca</h1>
       <div id="quick-links">
-        <a href="#">Resume</a>
-        <a href="#">Contact Me</a>
+        <a href="https://drive.google.com/file/d/0B070VDH8d-MLSV8tX0hocmdVOG8/view?usp=sharing">Resume</a>
+        <a href="mailto:pozderca@msu.edu">Contact Me</a>
       </div>
     </section>
 
