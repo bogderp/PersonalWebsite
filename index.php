@@ -39,7 +39,20 @@
       <h1>Bogdan Pozderca</h1>
       <div id="quick-links">
         <a target="_blank" href="https://drive.google.com/file/d/0B070VDH8d-MLSV8tX0hocmdVOG8/view?usp=sharing">Resume</a>
-        <a href="mailto:pozderca@msu.edu">Contact Me</a>
+        <a class="contact-me-js" href="mailto:pozderca@msu.edu">Contact Me</a>
+      </div>
+      <div class="modal modal-js modal-mask">
+        <div class="content small">
+          <div class="header">
+            <span class="title">Hello</span>
+            <a href="#" class="modal-toggle modal-toggle-js">
+              <i class="icon icon-cancel"></i>
+            </a>
+          </div>
+          <div class="body">
+            <p>hello!</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -150,6 +163,10 @@
       </p>
     </section>
     <!-- <div id="copyright">© Copyright 2015 Bogdan Pozderca</div> -->
-    <script src="assets/javascripts/index.js" type="text/javascript"></script>
+    <script src="assets/javascripts/general/modal.js" type="text/javascript"></script>
+    <script src="assets/javascripts/index/contact.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      Pozderca.Index.contact();
+    </script>
   </body>
 </html>

@@ -1,4 +1,9 @@
 {
+  "name": "Bogdan Pozderca",
+  "description": "Bogdan Pozderca's Personal Site",
+  "keywords": ["pozderca", "bogdan", "personal"],
+  "license": "MIT",
+  "type": "project",
   "autoload": {
     "psr-4": {
       "Bogdan\\": "lib/Bogdan"

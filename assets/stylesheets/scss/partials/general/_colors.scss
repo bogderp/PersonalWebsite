@@ -12,3 +12,65 @@ $gun-metal: #1f2833;
 
 // Blues
 $united-nations-blue: #4a90e2;
+
+@function palette($palette, $tone: base, $alpha: 1) {
+  // main base colors
+  $base-accent: #04b6af;
+  $base-background: #f5f6f7;
+  $base-black: #000;
+  $base-dropdown-menu: #21323b;
+  $base-green: #007c83;
+  $base-sidemenu: #152730;
+  $base-sidemenu-drawer: #14252e;
+  $base-sidemenu-footer: #11222a;
+  $base-text: #283c46;
+  $base-warning: #ff6f81;
+  $base-white: #fff;
+
+  // hue-based scales
+  $hue-scales: (
+    green: (
+      accent:         rgba($base-accent, $alpha),
+      base:           rgba($base-green, $alpha)
+    ),
+
+    red: (
+      base:           rgba($base-warning, $alpha),
+      warning:        rgba($base-warning, $alpha)
+    ),
+
+    white: (
+      base:           rgba($base-white, $alpha),
+    ),
+
+    black: (
+      base:           rgba($base-black, $alpha)
+    ),
+
+    gray: (
+      background:     rgba($base-background, $alpha),
+      base:           rgba($base-text, $alpha),
+      drawer-slate:   rgba($base-sidemenu-drawer, $alpha),
+      footer-slate:   rgba($base-sidemenu-drawer, $alpha),
+      dropdown:       rgba($base-dropdown-menu, $alpha),
+      slate:          rgba($base-sidemenu, $alpha),
+      text:           rgba($base-text, $alpha)
+    ),
+
+    box-shadow: (
+      base: rgba($base-sidemenu, $alpha),
+      accent: rgba($base-accent, $alpha),
+      warning: rgba($base-warning, $alpha)
+    )
+
+    // blue: (
+    //   dark: adjust-color($base-blue, $hue: +.50725deg, $saturation: -5.13717%, $lightness: -8.23529%),
+    //   base: $base-blue,
+    //   light1: adjust-color($base-blue, $hue: +.05376deg, $saturation: -6.34637%, $lightness: +27.64706%),
+    //   light2: adjust-color($base-blue, $hue: -1.42276deg, $saturation: -13.19426%, $lightness: +40.98039%),
+    //   light3: adjust-color($base-blue, $hue: +3.33333deg, $saturation: -42.93785%, $lightness: +46.66667%)
+    // ),
+  );
+
+  @return map-get(map-get($hue-scales, $palette), $tone);
+}
