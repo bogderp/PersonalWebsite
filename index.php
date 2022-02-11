@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover">
     <meta name="description" content="">
     <meta name="author" content="Bogdan Pozderca">
+    <meta name="google-site-verification" content="8lNmbwBR5WhCLJGRySZCtgnBcIaaVztC5vJu12KEXt4" />
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
     <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
     <title>Bogdan Pozderca</title>
