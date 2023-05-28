@@ -2,6 +2,8 @@
 .sass-cache
 .env
 Bogdan-Site.ai
+composer.phar
 Compilation.xcf
 cat.svg
 iMac.xcf
+vendor/
